@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>表格</title>
+</head>
+<body>
+<table border="2">
+    <caption align="bottom">成绩单</caption>
+    <tr><td width="80">序号</td><td width="80">姓名</td><td width="80">java</td>C</td><td width="80">Linux</td></tr>
+    <!-只要第一行的宽度或第一列的高度被设置，下面的行和列都会被设置-->
+    <tr bgcolor="aqua"><td>1</td><td>Jack</td><td bgcolor="blue">90</td><td rowspan="2">56</td></tr>
+    <!-行合并和列合并要把除了设置属性的那一行或列保留，其他需要合并的都去除-->
+    <tr><td>2</td><td>Tom</td><td>88</td></tr>
+    <tr align="right"><td>3</td><td>Rose</td><td colspan="2">122</td></tr>
+    <tr valign="top"><td>4</td><td>Andy</td><td>74</td><td>&nbsp;</td></tr><!-不用空格占用，会对原来形状有影响-->
+    </table>
+</body>
+</html>
