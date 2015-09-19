@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Document对象</title>
+</head>
+<body>
+<script language="JavaScript" type="text/javascript">
+    function getFormName(){
+        var form1=document.forms[0];
+        alert("document.forms[0].name="+form1.name);
+        alert("document.forms[0].btn1.value"+form1.btn1.value);
+    }
+    function changeImage(){
+        var img1=document.images[0];
+        var img2=document.images[1];
+        alert("do it");
+        if(img1.src==img2.src){
+            img1.src="p1.jpg";
+        }
+        else{
+            img1.src=img2.src;
+        }
+    }
+</script>
+
+<form name="form_data">
+    <input type="button" name="btn1" onclick="getFormName()" value="表单名称">
+    <input type="button" name="btn2" onclick="changeImage()" value="更换图片">
+    <hr/>
+    <img src="p1.jpg" name="p1"/>
+    <hr/>
+    <img src="p2.jpg" name="p2"/>
+</form>
+</body>
+</html>

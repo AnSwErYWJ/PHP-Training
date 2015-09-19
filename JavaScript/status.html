@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script language="JavaScript" type="text/javascript">
+        var today=new Date();
+        var future=new Date("December 25,2015");
+        var diff=future.getTime()-today.getTime();
+        var days=Math.ceil(diff/(1000*60*60*24));
+        var str="There are "+days+" days left until Christmas";
+        function fun(){
+            str=str.substring(1,str.length)+str(0,1);
+            document.title=str;
+            window.status=str;
+            setTimeout("fun()",300);
+        }
+    </script>
+</head>
+<body onload="fun()">
+<b>
+    <font color="gray" size="4">
+        Hello world!
+    </font>
+</b>
+<br/>
+</body>
+</html>

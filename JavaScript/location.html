@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>location对象</title>
+</head>
+<body>
+<a href="location.html#bbb">页面跳转</a>
+<a name="aaa">tmp-a</a>
+说明：需要从服务器中访问
+<br/>
+
+<input type="button" value="assign" onclick="do_assign()">
+<input type="button" value="reload" onclick="do_reload()">
+<input type="button" value="replace" onclick="do_replace()">
+<input type="button" value="href" onclick="do_href()">
+<input type="button" value="清空页面" onclick="do_blank()">
+<br/>
+
+<script language="JavaScript" type="text/javascript">
+    function do_assign(){//加载新文档
+        location.assign("location.html#bbb");
+    }
+    function do_reload(){
+        location.reload();
+    }
+    function do_replace(){
+        location.replace("location.html#bbb");
+    }
+    function do_href(){
+        location.href = "location.html#bbb";
+    }
+    function do_blank(){
+        location.href = "about:blank";
+    }
+    document.write("location hash is <font color='red'>"+location.hash+"</font><br/>");
+    document.write("location host is <font color='red'>"+location.host+"</font><br/>");
+    document.write("location hostname is <font color='red'>"+location.hostname+"</font><br/>");
+    document.write("location href is <font color='red'>"+location.href+"</font><br/>");
+    document.write("location pathname is <font color='red'>"+location.pathname+"</font><br/>");
+    document.write("location port is <font color='red'>"+location.port+"</font><br/>");
+    document.write("location protocol is <font color='red'>"+location.protocol+"</font><br/>");
+
+    function get_hash(){
+        alert(location.hash);
+    }
+</script>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<a name="bbb">tmp-b</a><br/>
+<a href="#aaa">跳转aaa</a><br/>
+<input type="button" onclick="get_hash()" value="getHash">
+说明：需要点击跳转aaa后才点击getHash.
+</body>
+</html>

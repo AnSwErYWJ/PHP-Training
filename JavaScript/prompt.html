@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>prompt方法</title>
+</head>
+<body>
+<script language="JavaScript" type="text/javascript">
+    var name=prompt("你的名字是：","");//第一个参数是输入提示，第二个参数是输入默认值
+    document.write("<br/>Welcome "+name+"!<br/>");
+    var age=prompt("你的年龄是：","Age");
+    if(age==null){
+        alert("not input your age!");
+    }
+    else{
+        alert(age+" is young");
+    }
+    alert(prompt("where are you",""));
+</script>
+</body>
+</html>

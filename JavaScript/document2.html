@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Document对象</title>
+    <script language="JavaScript" type="text/javascript">
+        function abc(){
+            document.links[1].href="date.html";
+            alert("ok!");
+        }
+        function getFormName(){
+            var name1=document.getElementsByName("i1");
+            var id1=document.getElementById("i0");
+            alert(name1.value+id1.value);
+        }
+    </script>
+</head>
+<body>
+<a href="array.html">array.html</a>
+<a href="array.html">array.html</a>
+<form action="" method="get" name="nf1" id="if1">
+    <input name=""  id="i0" type="button" onclick="abc()" value="changehref"/>
+    <input name="i1" type="button" onclick="getFormName()" value="获取名字"/>
+</form>
+</body>
+</html>
