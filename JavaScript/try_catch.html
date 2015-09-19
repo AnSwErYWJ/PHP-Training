@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>try-catch</title>
+</head>
+<body>
+<script language="JavaScript" type="text/javascript">
+    document.write("<br/>");
+    try{
+        document.write("try");
+        document.write("<br/>");
+        b=c;
+        document.write("111111");
+    }catch(e){
+        document.write("exception: "+ e.message);
+        document.write("<br/>");
+    }finally{//无论是否异常，都会执行
+        document.write("finally");
+        document.write("<br/>");
+    }
+</script>
+</body>
+</html>
