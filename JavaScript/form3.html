@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>checkbox、radio与select</title>
+<script language="JavaScript" type="text/javascript">
+    function chkall(input1){
+        var objLen=document.forms[0].length;
+        for(var i=0;i<objLen;i++)
+        {
+            if(input1.checked==true)
+            {
+                if(document.forms[0].elements[i].type=="checkbox")
+                    document.forms[0].elements[i].checked=true;
+            }
+            else{
+                if(document.forms[0].elements[i].type=="checkbox")
+                    document.forms[0].elements[i].checked=false;
+            }
+        }
+    }
+    function buy(){
+        var s="";
+        for(var i=0;i<document.choice.technic.length;i++){
+            if(document.choice.technic[i].checked){
+                s=s+document.choice.technic[i].value+"\n";
+            }
+        }
+        if(document.choice.r[0].checked){
+            if(confirm("买以下物品，确定吗？：\n"+s)){
+                document.write("buy:<pre>"+s+"</pre>");
+            }
+        }else
+        if(confirm("卖以下物品，确定吗？：\n"+s))
+            document.write("sale:<pre>"+s+"</pre>");
+    }
+    function fun(){
+        with(document.choice){
+          var d=myselect.selectedIndex;
+            if(d==1||d==2||d==3||d==4){
+                city.value=myselect.options[d].text;
+            }else{
+                city.value="请手工填写";
+            }
+        }
+    }
+    function reg(){
+        with(document.choice){
+            var un=userName.value;
+            var c1=myselect.value;
+            var c2=city.value;
+        }
+        document.write("<body bgcolor=blue'>");
+        document.write("<h2>信息如下:</h2>");
+        document.write("<hr/>");
+        document.write("<p>姓名: "+un+"</p>");
+        document.write("<p>省份: "+c1+"</p>");
+        document.write("<p>城市: "+c2+"</p>");
+        document.write("</body>")
+    }
+</script>
+</head>
+<body>
+<form name="choice">
+    全选：<input name="checkAll" type="checkbox" value="checkbox" onclick="chkall(this)"/>
+    <input type="checkbox" name="technic" value="1,"/>1
+    <input type="checkbox" name="technic" value="2,"/>2
+    <input type="checkbox" name="technic" value="3,"/>3
+    <input type="checkbox" name="technic" value="4,"/>4
+    <br/>
+    <input type="reset" value="重选">
+    <input type="button" onclick="buy()" value="确定">
+    <br/>
+    <input type="radio" name="r" value="buy" checked>buy
+    <input type="radio" name="r" value="sale">sale
+    <br/><br/>
+    <select name="myselect" onchange="fun()">
+        <option>--选择城市--</option>
+        <option value="bj">北京</option>
+        <option value="sh">上海</option>
+        <option value="cq">重庆</option>
+        <option value="tj">天津</option>
+        <option value="js">江苏</option>
+    </select>
+    <br/>
+    姓名<input type="text" name="userName" value="">
+    <br/>
+    城市<input type="text" name="city" value="">
+    <br/>
+    <input type="button" value="注册" onclick="reg()">
+</form>
+</body>
+</html>

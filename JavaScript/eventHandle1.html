@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>事件处理一</title>
+    <script language="JavaScript" type="text/javascript">
+        function myfun1() {
+            var card = document.myform.card;
+            if (card.value == "请注意格式：10xxxxxx") {
+                card.value = "";
+            }
+        }
+        function myfun2(){
+            var a=document.myform.card.value;
+            if(a.substr(0,2)!="10"||isNaN(a)){
+                alert("password error");
+                document.myform.card.onfocus();
+            }
+        }
+    </script>
+</head>
+<body>
+<form name="myform">
+    <h2>卡号:
+    <input name="card" type="text" maxlength="8" onfocus="myfun1()" value="请注意格式：10xxxxxx"
+            onblur="myfun2()">  格式：10xxxxxx
+    <br/>
+        密码: <input name="pass" type="text">
+    </h2>
+</form>
+</body>
+</html>

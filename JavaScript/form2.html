@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>文本域</title>
+    <script language="JavaScript" type="text/javascript">
+        function cleartext(){
+            if(document.myform.card.value=="输入账号，如1000")
+                document.myform.card.value="";
+        }
+        function check(){
+            var a=document.myform.card.value;
+            if(a.substr(0,2)!="10"||isNaN(a)){
+                alert("格式错误");
+                document.myform.card.focus();
+                document.myform.card.select();
+            }
+        }
+        function compute(){
+            var price=document.myform.price.value;
+            var number=document.myform.number.value;
+            document.myform.tot.value=price*number;
+        }
+    </script>
+</head>
+<body>
+<form name="myform">
+    <p>账号：
+    <input name="card" onfocus="cleartext()" onblur="check()" type="text" value="输入账号，如1000"/>
+    </p>
+    <p>单价：
+    <input name="price" type="text" value="25.00" readonly/>元
+    </p>
+    <p>数量：
+    <input name="number" onchange="compute()" type="text"/>个
+    </p>
+    <p>总价：
+        <input name="tot" type="text" value="0.00"/>元
+    </p>
+</form>
+</body>
+</html>

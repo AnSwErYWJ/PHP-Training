@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>焦点</title>
+    <script language="JavaScript" type="text/javascript">
+        function test(){
+            var name_1=document.formData.name_1;
+            alert("name_1.form="+name_1.form.name+"\nname_1.name="+name_1.name+ "\nname_1.type="+name_1.type+"\nname_1.value="+name_1.value+"\nname_1.defaultValue" +name_1.defaultValue);
+        }
+        function focus(){
+            var name_1=document.formData.name_1;
+            name_1.focus();
+        }
+        function blur(){
+            var name_1=document.formData.name_1;
+            name_1.blur();
+        }
+    </script>
+</head>
+<body>
+<form name="formData">
+    <input type="text" name="name_1" value="aaaaaa">
+    <input type="button" name="btn1" value="properties" onclick="test()"/>
+    <br/>
+    <input type="button" name="btn2" value="focus" onclick="focus()"/>
+    <br/>
+    <input type="button" name="btn3" value="blur" onclick="blur()"/>
+</form>
+</body>
+</html>

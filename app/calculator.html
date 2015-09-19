@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>迷你计算器</title>
+    <script language="JavaScript" type="text/javascript">
+        function calc(op){
+            var num1,num2;
+            num1=parseFloat(document.calForm.num1.value);
+            num2=parseFloat(document.calForm.num2.value);
+            switch(op){
+                case '+':
+                    document.calForm.result.value=num1+num2;
+                    break;
+                case '-':
+                    document.calForm.result.value=num1-num2;
+                    break;
+                case '*':
+                    document.calForm.result.value=num1*num2;
+                    break;
+                case '/':
+                        if(num2!=0)
+                            document.calForm.result.value=num1/num2;
+                        else
+                            alert("除数不可以为零");
+                    break;
+            }
+        }
+    </script>
+
+</head>
+<body>
+<form action="" method="post" name="calForm" id="calForm">
+    <p>第一个数：
+        <input type="text" name="num1" id="num1" size="25">
+        <br/>
+        第二个数：
+        <input type="text" name="num2" id="num2" size="25">
+    </p>
+    <p>
+        <input type="button" name="addBtn" id="addBtn" value="  +  " onclick="calc('+')">
+        <input type="button" name="subBtn" id="subBtn" value="  -  " onclick="calc('-')">
+        <input type="button" name="mulBtn" id="mulBtn" value="  *  " onclick="calc('*')">
+        <input type="button" name="divBtn" id="divBtn" value="  /  " onclick="calc('/')">
+    </p>
+    <p>
+        计算结果：
+        <input type="text" name="result" id="result" size="25">
+    </p>
+</form>
+</body>
+</html>
