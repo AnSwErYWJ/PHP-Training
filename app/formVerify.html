@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>表单验证</title>
+    <script language="JavaScript" type="text/javascript">
+        function setFocus(){
+            document.forms[0].userId.focus();
+        }
+        function checkNameNull(){
+            if(document.myForm.userId.value=="") {
+                alert("用户名不可为空！");
+                document.myForm.userId.focus();
+                return false;
+            }
+        }
+        function checkPwdNull() {
+            if(document.myForm.pwd.value=="")
+            {
+                alert("密码不可为空！");
+                document.myForm.pwd.focus();
+                return false;
+            }
+        }
+        function checkAge(){
+            if(document.myForm.age.value.search(/^\d(2)$/)==-1){
+                alert("请输入正确的年龄信息！");
+                document.myForm.age.value="";
+                document.myForm.age.focus();
+                return false;
+            }
+        }
+        function verify(){
+
+        }
+    </script>
+</head>
+<body onload="setFocus()">
+<!-onsubmit在单击submit之前调用，form.submit不调用-->
+<div if="main">
+    <h1 align="center">表单验证</h1>
+    <form name="myForm" method="post" onsubmit="return verify()">
+        <div id="form_block1">
+            <table>
+                <tr><td>用户名：</td><td><input name="userId" type="text" id="userID" size="12" onblur="checkNameNull()"/></td></tr><br/>
+    <tr><td>密码：</td><td><input name="pwd" type="password" id="pwd" size="12" onblur="checkPwdNull()"/></td></tr><br/>
+                <tr><td>年龄：</td><td><input name="age" type="text" id="age" size="3" onblur="checkAge()"/></td></tr><br/><br/>
+            </table>
+
+        <table>
+        <tr><td><input type="submit" name="submit" id="submit" value="提交"/></td>
+        <td><input type="reset" name="reset" id="reset" value="重置"/></td></tr>
+        </table>
+        </div>
+    <br/>
+</form>
+</div>
+</body>
+</html>
