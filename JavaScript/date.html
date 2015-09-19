@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Date对象</title>
+</head>
+<body>
+<script language="JavaScript" type="text/javascript">
+    var dd = new Date(2015,9,19,10,31,40);
+    document.write(dd.toLocaleDateString());
+    document.write("<br/><br/>");
+    document.write("month="+dd.getMonth());
+    document.write("<br/><br/>");
+    document.write("星期"+dd.getDay());
+    document.write("<br/><br/>");
+    document.write("getTime:"+dd.getTime());
+    document.write("<br/><br/>");
+    document.write("tolocaleDateString: "+dd.toLocaleDateString());
+    document.write("<br/><br/>");
+    document.write("tolocaleString "+dd.toLocaleString());
+    document.write("<br/><br/>");
+    document.write("toGMTString: "+dd.toGMTString());
+    document.write("<br/><br/>");
+    document.write("Date.parse(dd): "+Date.parse(dd));
+    document.write("<br/><br/>");
+    document.write("Date.UTC(dd): "+Date.UTC(2015,9,19,10,31,40));
+    document.write("<br/><br/>");
+    document.write("Date.UTC(dd): "+Date.UTC(2015,9,19,4,31,40));
+    document.write("<br/><br/>");
+
+    document.write("<hr/>");
+    dd.setMonth(6);
+    document.write(dd.toLocaleString());
+    document.write("<br/><br/>");
+    document.write("month="+dd.getMonth());
+    document.write("<br/><br/>");
+
+    document.write("<hr/>");
+    var now=new Date();
+    var hour=now.getHours();
+    if(hour>=0 && hour<=12)
+        document.write("morning");
+    if(hour>=12&&hour<=18)
+        document.write("afternoon");
+    if(hour>=18&&hour<=24)
+        document.write("night");
+    document.write("<p>今天日期:"+now.getFullYear()+"年"+(now.getMonth()+1)+"月"+now.getDate()+"日<p/>");
+    document.write("<p>现在时间:"+now.getHours()+"点"+now.getMinutes()+"分<p/>");
+</script>
+</body>
+</html>
