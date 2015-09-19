@@ -6,8 +6,8 @@
     <script language="JavaScript" type="text/javascript">
         function calc(op){
             var num1,num2;
-            num1=parseFloat(document.calForm.num1.value);
-            num2=parseFloat(document.calForm.num2.value);
+            num1=parseFloat(document.calForm.num[0].value);
+            num2=parseFloat(document.calForm.num[1].value);
             switch(op){
                 case '+':
                     document.calForm.result.value=num1+num2;
@@ -21,21 +21,33 @@
                 case '/':
                         if(num2!=0)
                             document.calForm.result.value=num1/num2;
-                        else
+                        else {
                             alert("除数不可以为零");
+                            document.calForm.num2.focus();
+                            document.calForm.num2.value="";
+                        }
                     break;
             }
         }
+
+        function check(ar){
+                if (isNaN(ar.value)) {
+                    alert("请输入数字！")
+                    ar.focus();
+                    ar.select();
+                }
+        }
+
     </script>
 
 </head>
 <body>
 <form action="" method="post" name="calForm" id="calForm">
     <p>第一个数：
-        <input type="text" name="num1" id="num1" size="25">
+        <input type="text" name="num" id="num1" size="25" onblur="check(this)" >
         <br/>
         第二个数：
-        <input type="text" name="num2" id="num2" size="25">
+        <input type="text" name="num" id="num2" size="25" onblur="check(this)" >
     </p>
     <p>
         <input type="button" name="addBtn" id="addBtn" value="  +  " onclick="calc('+')">
