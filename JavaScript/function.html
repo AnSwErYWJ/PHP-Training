@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>函数</title>
+    <script language="javascript" type="text/javascript">
+        function fun(){
+            return("hello,answer");
+        }
+        function href(){
+            document.bgColor="lightblue";
+            alert("This is href");
+        }
+    </script>
+</head>
+<body>
+<h1>my function</h1>
+<script language="JavaScript" type="text/javascript">
+    document.write(fun());
+</script>
+<br/>
+
+<h1>链接调用函数</h1>
+<a href="javascript:href()"><big>Click here</big></a>
+<br/>
+
+<h1>事件触发调用</h1>
+<form>
+    <input type="button" value="welcome" onclick="href();">
+</form>
+</body>
+</html>
