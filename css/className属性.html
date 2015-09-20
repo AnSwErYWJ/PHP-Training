@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>className</title>
+    <style type="text/css">
+        .style1{background-color: red;}
+        .style1 ul li{list-style-type: circle;color: yellow;}
+
+        .style2{background-color: aqua;color:gray;}
+        .style2 ul li{list-style-type: disc;}
+    </style>
+</head>
+<body>
+<div id="div1">
+    <ul>
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+    </ul>
+</div>
+
+<select onchange="document.getElementById('div1').className=this.value">
+    .<option value="style1">style1</option>
+    <option value="style2">style2</option>
+</select>
+</body>
+</html>
