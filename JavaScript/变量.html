@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>JavaScript变量</title>
+</head>
+<body>
+<script language="JavaScript" type="text/javascript">
+    //NaN为非数值类型
+    document.write("NaN==NaN is ");
+    document.write(NaN==NaN);
+    document.write("<br/>typeof(NaN) is " + typeof(NaN) );
+    document.write("<hr/>");
+
+    //有双引号的外面用单引号
+    document.write('<br/>isNaN("blue") is ' + isNaN("blue"));
+    document.write('<br/>isNaN("123") is ' + isNaN("123"));
+    document.write("<br/>1/0 is " + 1/0);
+    document.write("<br/>-1/0 is " + -1/0 + "<br/>");
+    document.write("<hr/>");
+
+    document.write("如果a=1,b='1'.那么");
+    var a= 1,b='1';
+    document.write("a==b is ");
+    document.write(a==b);
+    document.write("<br/>");
+    document.write("a+b = "+(a+b));//字符串连接
+</script>
+</body>
+</html>
