@@ -3,9 +3,43 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>selector分类</title>
-    <script lang
+    <style type="text/css">
+        /*普通选择符*/
+        h1{
+            color:red;
+            text-align: right;
+        }
+
+        /*类选择符*/
+        h2.red{
+            text-align: left;
+            color:red;
+        }
+        h2.blue{
+            text-align: left;
+            color:blue;
+        }
+        .green{/*所有标签可用*/
+            text-align: center;
+            color: green;
+        }
+
+        /*id选择符*/
+        #id1 {color:gray;}
+
+        /*组合使用-关联*/
+        h4 b{
+            color:red;
+        }
+
+    </style>
 </head>
 <body>
-
+<h1>普通选择符</h1>
+<h2 class="red">类选择符1</h2>
+<h2 class="blue">类选择符2</h2>
+<h2 class="green">类选择符3</h2>
+<h3 id="id1">id选择符</h3>
+<h4><b>组合使用-</b>关联</h4>
 </body>
 </html>
