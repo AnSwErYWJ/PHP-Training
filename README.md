@@ -1,5 +1,5 @@
 # Description
-PHP实训代码
+code of PHP training.
 # Feedback
   - 微博：[@AnSwEr不是答案](http://weibo.com/1783591593)
   - github：[AnSwErYWJ](https://github.com/AnSwErYWJ)
