@@ -1,10 +1,118 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="author" content="AnSwEr" />
+    <title>Ex one-contact</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <script LANGUAGE="javascript" src="contact.js"></script>
 </head>
-<body>
 
+<body onload="setFocus()">
+<div id="main_container">
+    <div id="header">
+        <div id="logo">
+            <a href="homepage.html"><img src="images/logo.gif" alt="" title="" border="0" /></a>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a class="current" href="homepage.html" title="">homepage</a></li>
+                <li><a href="blogs.html" title="">blogs</a></li>
+                <li><a href="#" title="">photos</a></li>
+                <li><a href="#" title="">about</a></li>
+                <li><a href="contact.html" title="">contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="main_content">
+        <div id="left_content">
+            <div id="search">
+                <h1 >search</h1>
+                <ul>
+                    <li><input name="search" type="text" width="10px"/></li>
+                    <li><a href="#"><img src="images/search.gif" alt="" title="" border="0" /></a></li>
+                </ul>
+            </div>
+            <br/>
+
+            <div class="content">
+                <h1 >lorem ipsum</h1>
+                <ul>
+                    <li><a href="#">Fusce dui neque fringilla</a></li>
+                    <li><a href="#">Eget tempor eget nonummy</a></li>
+                    <li><a href="#">Magna lacus bibendum mauris</a></li>
+                    <li><a href="#">Nec metus sed donec</a></li>
+                    <li><a href="#">Magna lacus bibendum mauris</a></li>
+                    <li><a href="#">Velit semper nisi molesite</a></li>
+                    <li><a href="#">Eget tempor eget nonummy</a></li>
+                </ul>
+            </div>
+            <br/>
+
+            <div class="content">
+                <h1 >volutpat dolore</h1>
+                <ul>
+                    <li><a href="#">Nec metus sed donec</a></li>
+                    <li><a href="#">Magna lacus bibendum mauris</a></li>
+                    <li><a href="#">Velit semper nisi molesite</a></li>
+                    <li><a href="#">Eget tempor eget nonummy</a></li>
+                    <li><a href="#">Nec metus sed donec</a></li>
+                    <li><a href="#">Magna lacus bibendum mauris</a></li>
+                    <li><a href="#">Velit semper nisi molesite</a></li>
+                </ul>
+            </div>
+            <br/>
+
+            <div class="content">
+                <h1 >faucibus lobortis</h1>
+                <ul>
+                    <li><a href="#">Nec metus sed donec</a></li>
+                    <li><a href="#">Magna lacus bibendum mauris</a></li>
+                    <li><a href="#">Velit semper nisi molesite</a></li>
+                    <li><a href="#">Eget tempor eget nonummy</a></li>
+                    <li><a href="#">Nec metus sed donec</a></li>
+                    <li><a href="#">Magna lacus bibendum mauris</a></li>
+                    <li><a href="#">Velit semper nisi molesite</a></li>
+                </ul>
+            </div>
+            <br/>
+        </div>
+
+        <div id="right_content">
+            <a href="#"><img src="images/fruit.gif" alt="" title="" border="0" /></a>
+            <!-onsubmit在单击submit之前调用，form.submit不调用-->
+            <div id="contact"></div>
+                <h2>Contact from</h2>
+                <form name="myForm" method="post" onsubmit="return verify()" >
+                    <div id="form_block1">
+                        <table>
+                            <tr><td>id：</td><td><input name="userId" type="text" id="userID" size="12" onblur="checkNameNull()"/></td></tr><br/>
+                            <tr><td>password：</td><td><input name="pwd" type="password" id="pwd" size="12" onblur="checkPwdNull()"/></td></tr><br/>
+                            <tr><td>age：</td><td><input name="age" type="text" id="age" size="3" onblur="checkAge()"/></td></tr><br/><br/>
+                        </table>
+                        <br/>
+                        hometown：
+                        <br/>
+                        <select name="myselect" onchange="fun()">
+                            <option>--选择城市--</option>
+                            <option value="bj">北京</option>
+                            <option value="sh">上海</option>
+                            <option value="cq">重庆</option>
+                            <option value="tj">天津</option>
+                            <option value="other">其它</option>
+                        </select>
+                        <input type="text" name="city" value="">
+                        <table>
+                            <tr><td><input type="submit" name="submit" id="submit" value="submit" onclick="reg()"/></td>
+                                <td><input type="reset" name="reset" id="reset" value="reset" /></td>
+                            </tr>
+                        </table>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

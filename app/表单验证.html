@@ -27,7 +27,7 @@
             }
         }
         function checkAge(){
-            if(document.myForm.age.value.search(/^\d(2)$/)==-1){
+            if(document.myForm.age.value.search(/^\d{2}$/)==-1){
                 alert("请输入正确的年龄信息！");
                 document.myForm.age.value="";
                 document.myForm.age.focus();
