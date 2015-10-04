@@ -30,20 +30,22 @@ body {
     padding:0px;
     clear:both;
     background-color:#000000;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
 }
 
 #menu ul{
     list-style:none;padding:0 0 0 10px;margin: auto;display:block;
 }
 #menu ul li{
-    list-style:none;display:inline;float:left;width:auto;height:60px;padding:0 0 0 20px;line-height:42px; font-family:Arial, Helvetica, sans-serif; font-size:13px;
+    list-style:none;display:inline;float:left;width:auto;height:36px;padding:0 0 0 10px;line-height:36px; font-family:Arial, Helvetica, sans-serif; font-size:13px;
 }
 #menu ul li a{
-    height:42px; width: auto;float:left;text-decoration:none;padding:0 0 0 20px; margin:0px 3px 0px 3px;color:#fff;text-align:center;
+    height:36px; width: auto;float:left;text-decoration:none;padding:0 0 0 10px; margin:0px 3px 0px 3px;color:#fff;text-align:center;
 }
 #menu ul li a:hover{
-    height:42px;width: auto;text-decoration:none;color: #009FCC;padding:0 0 0 20px;
+    height:36px;width: auto;text-decoration:none;color: #009FCC;padding:0 0 0 10px;
 }
 #menu ul li a.current{
-    height:42px;width: auto;float:left;text-decoration:none;padding:0 0 0 20px;color:#009FCC ;
+    height:36px;width: auto;float:left;text-decoration:none;padding:0 0 0 10px;color:#009FCC ;
 }
