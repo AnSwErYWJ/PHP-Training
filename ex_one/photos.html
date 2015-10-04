@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="author" content="AnSwEr" />
-    <title>Ex one-about</title>
+    <title>Ex one-photos</title>
     <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 </head>
 
@@ -15,11 +15,11 @@
         </div>
         <div id="menu">
             <ul>
-                <li><a  href="homepage.html" title="">homepage</a></li>
+                <li><a href="homepage.html" title="">homepage</a></li>
                 <li><a href="http://blog.csdn.net/u011192270" target="_blank" title="">blogs</a></li>
-                <li><a href="photos.html" title="">photos</a></li>
-                <li><a href="about.html" title="" class="current">about</a></li>
-                <li><a href="contact.html" title="" >contact</a></li>
+                <li><a href="photos.html" class="current" title="">photos</a></li>
+                <li><a href="about.html" title="">about</a></li>
+                <li><a href="contact.html" title="">contact</a></li>
             </ul>
         </div>
     </div>
@@ -79,40 +79,10 @@
         </div>
 
         <div id="right_content">
-            <a href="#"><img src="images/fruit.gif" alt="" title="" border="0" /></a>
-            <div id="about">
-                <marquee  direction="right" behavior="scroll" onmouseover=this.stop() onmouseout=this.start()>
-                <h2>About</h2>
-                <p>Arthor：AnSwEr</p>
-                <p>School：CSLG</p>
-                <p>
-                    <script language="JavaScript" type="text/javascript">
-                        var now=new Date();
-                        document.write("Date："+now.getFullYear()+" "+(now.getMonth()+1)+" "+now.getDate()+" ");
-                    </script>
-                </p>
-                <p>
-                    <script language="JavaScript" type="text/javascript">
-                        document.write("Time："+now.getHours()+":"+now.getMinutes()+"");
-                        </script>
-                </p>
-            </marquee>
-                <marquee  direction="left" behavior="scroll" onmouseover=this.stop() onmouseout=this.start()>
-                    <h2>关于</h2>
-                    <p>作者：袁伟杰</p>
-                    <p>学校：常熟理工学院</p>
-                    <p>
-                        <script language="JavaScript" type="text/javascript">
-                            var now=new Date();
-                            document.write("日期："+now.getFullYear()+"年"+(now.getMonth()+1)+"月"+now.getDate()+"日");
-                        </script>
-                    </p>
-                    <p>
-                        <script language="JavaScript" type="text/javascript">
-                            document.write("时间："+now.getHours()+"点"+now.getMinutes()+"分");
-                        </script>
-                    </p>
-                </marquee>
+            <div id="photos">
+                <h2>将鼠标放到图片上有惊喜</h2>
+                <a href="photos.html"><img src="images/fruit.gif" name="p1" onmousemove="src='images/flower.gif'" onmouseout=" src='images/fruit.gif'"> </a>
+                <a href="photos.html"><img src="p1.jpg" name="p1" onmousemove="src='p2.jpg'" onmouseout=" src='p1.jpg'"> </a>
             </div>
         </div>
     </div>
