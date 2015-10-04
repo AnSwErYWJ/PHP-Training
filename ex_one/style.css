@@ -50,6 +50,7 @@ a{
 #menu ul li a:hover{
     height:36px;width: auto;text-decoration:none;color: #009FCC;padding:0 0 0 10px;
 }
+
 #menu ul li a.current{
     height:36px;width: auto;float:left;text-decoration:none;padding:0 0 0 10px;color:#009FCC ;
 }
