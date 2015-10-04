@@ -1,10 +1,121 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="author" content="AnSwEr" />
+    <title>Ex one-about</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 </head>
-<body>
 
+<body>
+<div id="main_container">
+    <div id="header">
+        <div id="logo">
+            <a href="homepage.html"><img src="images/logo.gif" alt="" title="" border="0" /></a>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a  href="homepage.html" title="">homepage</a></li>
+                <li><a href="http://blog.csdn.net/u011192270" target="_blank" title="">blogs</a></li>
+                <li><a href="#" title="">photos</a></li>
+                <li><a href="about.html" title="" class="current">about</a></li>
+                <li><a href="contact.html" title="" >contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="main_content">
+        <div id="left_content">
+            <div id="search">
+                <h1 >search</h1>
+                <ul>
+                    <li><input name="search" type="text" width="10px"/></li>
+                    <li><a href="#"><img src="images/search.gif" alt="" title="" border="0" /></a></li>
+                </ul>
+            </div>
+            <br/>
+
+            <div class="content">
+                <h1 >lorem ipsum</h1>
+                <ul>
+                    <li><a href="#">Fusce dui neque fringilla</a></li>
+                    <li><a href="#">Eget tempor eget nonummy</a></li>
+                    <li><a href="#">Magna lacus bibendum mauris</a></li>
+                    <li><a href="#">Nec metus sed donec</a></li>
+                    <li><a href="#">Magna lacus bibendum mauris</a></li>
+                    <li><a href="#">Velit semper nisi molesite</a></li>
+                    <li><a href="#">Eget tempor eget nonummy</a></li>
+                </ul>
+            </div>
+            <br/>
+
+            <div class="content">
+                <h1 >volutpat dolore</h1>
+                <ul>
+                    <li><a href="#">Nec metus sed donec</a></li>
+                    <li><a href="#">Magna lacus bibendum mauris</a></li>
+                    <li><a href="#">Velit semper nisi molesite</a></li>
+                    <li><a href="#">Eget tempor eget nonummy</a></li>
+                    <li><a href="#">Nec metus sed donec</a></li>
+                    <li><a href="#">Magna lacus bibendum mauris</a></li>
+                    <li><a href="#">Velit semper nisi molesite</a></li>
+                </ul>
+            </div>
+            <br/>
+
+            <div class="content">
+                <h1 >faucibus lobortis</h1>
+                <ul>
+                    <li><a href="#">Nec metus sed donec</a></li>
+                    <li><a href="#">Magna lacus bibendum mauris</a></li>
+                    <li><a href="#">Velit semper nisi molesite</a></li>
+                    <li><a href="#">Eget tempor eget nonummy</a></li>
+                    <li><a href="#">Nec metus sed donec</a></li>
+                    <li><a href="#">Magna lacus bibendum mauris</a></li>
+                    <li><a href="#">Velit semper nisi molesite</a></li>
+                </ul>
+            </div>
+            <br/>
+        </div>
+
+        <div id="right_content">
+            <a href="#"><img src="images/fruit.gif" alt="" title="" border="0" /></a>
+            <div id="about">
+                <marquee  direction="right" behavior="scroll" onmouseover=this.stop() onmouseout=this.start()>
+                <h2>About</h2>
+                <p>Arthor：AnSwEr</p>
+                <p>School：CSLG</p>
+                <p>
+                    <script language="JavaScript" type="text/javascript">
+                        var now=new Date();
+                        document.write("Date："+now.getFullYear()+" "+(now.getMonth()+1)+" "+now.getDate()+" ");
+                    </script>
+                </p>
+                <p>
+                    <script language="JavaScript" type="text/javascript">
+                        document.write("Time："+now.getHours()+":"+now.getMinutes()+"");
+                        </script>
+                </p>
+            </marquee>
+                <marquee  direction="left" behavior="scroll" onmouseover=this.stop() onmouseout=this.start()>
+                    <h2>关于</h2>
+                    <p>作者：袁伟杰</p>
+                    <p>学校：常熟理工学院</p>
+                    <p>
+                        <script language="JavaScript" type="text/javascript">
+                            var now=new Date();
+                            document.write("日期："+now.getFullYear()+"年"+(now.getMonth()+1)+"月"+now.getDate()+"日");
+                        </script>
+                    </p>
+                    <p>
+                        <script language="JavaScript" type="text/javascript">
+                            document.write("时间："+now.getHours()+"点"+now.getMinutes()+"分");
+                        </script>
+                    </p>
+                </marquee>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
