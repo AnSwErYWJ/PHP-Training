@@ -38,7 +38,7 @@ body {
     list-style:none;padding:0 0 0 10px;margin: auto;display:block;
 }
 #menu ul li{
-    list-style:none;display:inline;float:left;width:auto;height:36px;padding:0 0 0 50px;line-height:36px; font-family:Arial, Helvetica, sans-serif; font-size:13px;
+    list-style:none;display:inline;float:left;width:auto;height:36px;padding:0 0 0 30px;line-height:36px; font-family:Arial, Helvetica, sans-serif; font-size:13px;
 }
 #menu ul li a{
     height:36px; width: auto;float:left;text-decoration:none;padding:0 0 0 10px; margin:0px 3px 0px 3px;color:#fff;text-align:center;
@@ -48,4 +48,86 @@ body {
 }
 #menu ul li a.current{
     height:36px;width: auto;float:left;text-decoration:none;padding:0 0 0 10px;color:#009FCC ;
+}
+
+#main_content{
+    width:1246px;
+    height:795px;
+    clear:both;
+    background-color:#000000;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+
+#left_content{
+    width:340px;
+    height:795px;
+    margin:0px;
+    float:left;
+    padding:0px;
+    background-color:#000000;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:10px;
+}
+
+#right_content{
+    width:906px;
+    height:795px;
+    margin:0;
+    float:left;
+    padding:0px;
+    background-color:#000000;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+
+#search{
+    width:340px;
+    height:auto;
+    padding:0 0 16px 42px;
+    text-align: left;
+}
+
+#search h1{
+    padding:0 0 0 8px;
+}
+
+#search ul{
+    list-style:none;
+    padding:0px;
+    margin: auto;
+    display:block;
+}
+
+#search ul li{
+    list-style:none;
+    display:inline;
+    float:left;
+    width:auto;
+    padding:0px;
+    line-height:36px;
+    padding:0 0 0 8px;
+}
+
+.content{
+    width:340px;
+    height:auto;
+    padding:10px 0 0 50px;
+    text-align: left;
+}
+
+.content ul{
+    list-style:none;
+    padding:0px;
+}
+
+.content ul li{
+    list-style:none;
+    padding:0 0 6px 0;
+}
+
+.content ul li a{
+   color:#009FCC;
 }
