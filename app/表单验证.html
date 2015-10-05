@@ -43,7 +43,7 @@
 <!-onsubmit在单击submit之前调用，form.submit不调用-->
 <div if="main">
     <h1 align="center">表单验证</h1>
-    <form name="myForm" method="post" onsubmit="return verify()">
+    <form name="myForm" method="post" action="" onsubmit="return verify()">
         <div id="form_block1">
             <table>
                 <tr><td>用户名：</td><td><input name="userId" type="text" id="userID" size="12" onblur="checkNameNull()"/></td></tr><br/>

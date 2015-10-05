@@ -21,9 +21,12 @@
         <tr>
             <td>技能</td>
             <td>
-                <input type="checkbox" name="tech" value="C"/>C
-                <input type="checkbox" name="tech" value="C++"/>C++
-                <input type="checkbox" name="tech" value="Linux"/>Linux
+                <label for="C">C</label>
+                <input type="checkbox" name="tech" value="C" id="C"/>
+                <label for="C++">C++</label>
+                <input type="checkbox" name="tech" value="C++" id="C++"/>
+                <label for="Linux">Linux</label>
+                <input type="checkbox" name="tech" value="Linux" id="Linux"/>
             </td>
         </tr>
         <tr>
@@ -39,13 +42,13 @@
         </tr>
         <tr>
             <td>自我介绍</td>
-            <td><textarea rows="5" cols="40" name="introduce" value="i am answer"></textarea></td>
+            <td><textarea rows="5" cols="40" name="introduce" >i am answer</textarea></td>
         </tr>
         <tr>
             <td>籍贯</td>
             <td>
                 <select name="hometown" multiple="multiple" size="2"><!-最多选两项-->
-                    <option value="default">--请选择</option>
+                    <option value="default" selected="selected">--请选择</option>
                     <option value="dl"/>大连
                     <option value="sz" selected="selected"/>苏州
                     <option value="sh"/>上海
@@ -61,5 +64,7 @@
     </table>
 </form>
 </fieldset>
+<p>label标签不会向用户呈现任何特殊效果，它的作用是为鼠标用户改进了可用性。如果你在 label 标签内点击文本，就会触发此控件。就是说，当用户单击选中该label标签时，浏览器就会自动将焦点转到和标签相关的表单控件上（就自动选中和该label标签相关连的表单控件上）。</p>
+<p>注意：标签的 for 属性中的值应当与相关控件的 id 属性值一定要相同。</p>
 </body>
 </html>
