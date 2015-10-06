@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>层模型</title>
+    <style type="text/css">
+        #div{
+            width:200px;
+            height:200px;
+            border:2px red solid;
+        }
+        #div1{
+            width:200px;
+            height:200px;
+            border:2px green solid;
+            position:absolute;/*绝对定位*/
+            left:100px;
+            bottom:20px;
+        }
+        #div2{
+            width:200px;
+            height:200px;
+            border:2px yellow solid;
+            position:relative;/*相对定位*/
+            right:100px;
+            top:50px;
+        }
+        #div3{
+            width:200px;
+            height:200px;
+            border:2px #000000 solid;
+            position:fixed;/*固定定位*/
+            left:100px;
+            top:50px;
+        }
+    </style>
+</head>
+<body>
+<div id="div"></div><span>原来位置</span>
+<div id="div1"></div><span>现在位置</span>
+<div id="div2"></div><span>原来位置保留</span>
+<div id="div3"></div><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+</body>
+</html>

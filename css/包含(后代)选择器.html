@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>子选择符与包含(后代)选择器</title>
+    <style type="text/css">
+        .first>span{border:4px solid red;color: red}
+        .first span{border:1px solid black;color: black}
+    </style>
+</head>
+<body>
+<p>子选择器（child selector）仅是指它的直接后代，或者你可以理解为作用于子元素的第一代后代。而后代选择器是作用于所有子后代元素。后代选择器通过空格来进行选择，而子选择器是通过“>”进行选择。</p>
+<p class="first">三年级时，<span>我还是一个<span>胆小如鼠</span></span></p>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>权值</title>
+    <style type="text/css">
+        p{color:red;}
+        .first{color:green;}/*因为权值高显示为绿色*/
+
+        span{color:pink;}/*设置为粉色*/
+
+        p{color:red;} /*权值为1*/
+        p span{color:green;} /*权值为1+1=2*/
+        .warning{color:white;} /*权值为10*/
+        p span.warning{color:purple;} /*权值为1+1+10=12*/
+        #footer .note p{color:yellow;} /*权值为100+10+1=111*/
+        p{color:red!important;}/*最高权重，!important要写在分号的前面*/
+        /*浏览器默认的样式 < 网页制作者样式 < 用户自己设置的样式，但记住!important优先级样式是个例外，权值高于用户自己设置的样式。*/
+
+
+    </style>
+</head>
+<body>
+<h1>权值相同时，处于最后面的CSS样式被应用</h1>
+<p class="first"><span>权值：</span>标签的权值为1，类选择符的权值为10，ID选择符的权值最高为100。</p>
+<p id="second">还有一个权值比较特殊--继承也有权值但很低，有的文献提出它只有0.1，所以可以理解为继承的权值最低。</p>
+</body>
+</html>

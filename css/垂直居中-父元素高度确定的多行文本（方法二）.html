@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta  charset="utf-8">
+    <title>父元素高度确定的多行文本</title>
+    <style>
+        /*在 chrome、firefox 及 IE8 以上的浏览器下可以设置块级元素的 display 为 table-cell，激活 vertical-align 属性，但注意 IE6、7 并不支持这个样式。*/
+        .container{
+            height:300px;
+            background:#ccc;
+
+            display:table-cell;/*IE8以上及Chrome、Firefox*/
+            vertical-align:middle;/*IE8以上及Chrome、Firefox*/
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <div>
+        <p>看我是否可以居中。</p>
+        <p>看我是否可以居中。</p>
+        <p>看我是否可以居中。</p>
+        <p>看我是否可以居中。</p>
+        <p>看我是否可以居中。</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+网页中的字体css样式代码也有他自己的缩写方式，下面是给网页设置字体的代码：
+
+body{
+    font-style:italic;
+    font-variant:small-caps;
+    font-weight:bold;
+    font-size:12px;
+    line-height:1.5em;
+    font-family:"宋体",sans-serif;
+}
+这么多行的代码其实可以缩写为一句：
+
+body{
+    font:italic  small-caps  bold  12px/1.5em  "宋体",sans-serif;
+}
+注意：
+
+1、使用这一简写方式你至少要指定 font-size 和 font-family 属性，其他的属性(如 font-weight、font-style、font-varient、line-height)如未指定将自动使用默认值。
+
+2、在缩写时 font-size 与 line-height 中间要加入“/”斜扛。
+
+一般情况下因为对于中文网站，英文还是比较少的，所以下面缩写代码比较常用：
+
+body{
+    font:12px/1.5em  "宋体",sans-serif;
+}
+只是有字号、行间距、中文字体、英文字体设置。

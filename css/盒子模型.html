@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>盒子模型</title>
+    <style type="text/css">
+        /*块级元素都具有盒子模型的特点*/
+        p{
+            border-width:2px;
+            border-style:solid;
+            border-color:red;
+            padding-top:20px;
+            padding-right:10px;
+            padding-bottom:15px;
+            padding-left:30px;
+        }
+        p{
+            border:2px  solid  red;
+            padding:20px 10px 15px 30px;/*填充，上、右、下、左(顺时针)*/
+            margin:20px 10px 15px 30px;/*边界*/
+        }/*与上面相同*/
+        div{
+            margin:10px 20px;/*top和bottom值相同、left和 right的值相同*/
+            margin:10px 20px 30px;/*如果left和right的值相同*/
+            margin:10px;/*都相同*/
+            color: #369;/*#336699*/
+        }
+    </style>
+</head>
+<body>
+<p>border-style（边框样式）常见样式有：dashed（虚线）| dotted（点线）| solid（实线）。</p>
+<p>border-color（边框颜色）中的颜色可设置为十六进制颜色</p>
+<p>border-width（边框宽度）中的宽度也可以设置为：thin | medium | thick（但不是很常用），最常还是用象素（px）。</p>
+<p>边框可以分为：border-top、border-right、border-left、border-bottom</p>
+<p>padding和margin的区别，padding在边框里，margin在边框外。</p>
+</body>
+</html>

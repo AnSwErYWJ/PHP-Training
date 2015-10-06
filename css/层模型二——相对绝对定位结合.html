@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>相对参照元素进行定位</title>
+    <style type="text/css">
+        div{border:2px red solid;}
+
+        #box3{
+            width:200px;
+            height:200px;
+            position:relative;
+        }
+        #box4{
+            width:99%;
+            position:absolute;
+            bottom:0;
+            left:0; /*这条css样式可以省略*/
+        }
+
+    </style>
+</head>
+
+<body>
+<div id="box3">
+    <img src="http://img.mukewang.com/541a7d8a00018cf102000200.jpg">
+    <div id="box4">当我还是三年级的学生时是一个害羞的小女生。</div>
+</div>
+</body>
+</html>

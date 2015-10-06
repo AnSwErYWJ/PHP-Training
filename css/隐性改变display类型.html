@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta  charset="utf-8">
+    <title>隐性改变display类型</title>
+    <style>
+        .container a{
+            position:absolute;
+            width:200px;
+            background:#ccc;
+            /*三选一后，元素会自动变为以 display:inline-block 的方式显示，当然就可以设置元素的 width 和 height 了且默认宽度不占满父元素。*/
+            float:left;
+            position:absolute;
+            float:right；
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <a href="#" title="">进入课程请单击这里</a>
+</div>
+</body>
+</html>

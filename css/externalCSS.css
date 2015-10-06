@@ -1,4 +1,7 @@
-h1{
-    font-size:200pt;
+p/*选择符*/
+ /* 声明 */
+  {
+    font-size:200pt;/*;分隔*/
+    /*属性值*/
     color:red;;
 }

@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>不定宽块状元素水平居中</title>
+    <style>
+        /*第一步：为需要设置的居中的元素外面加入一个 table 标签 ( 包括 <tbody>、<tr>、<td> )。
+          第二步：为这个 table 设置“左右 margin 居中”（这个和定宽块状元素的方法一样）。*/
+        table{
+            margin:0 auto;/*左右 margin 居中*/
+        }
+        ul{list-style:none;margin:0;padding:0;}
+        li{float:left;display:inline;margin-right:8px;}
+
+    </style>
+</head>
+
+<body>
+<div>
+    <table>
+        <tbody>
+        <tr><td>
+            <ul>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+            </ul>
+        </td></tr>
+        </tbody>
+    </table>
+</div>
+
+
+</body>
+</html>

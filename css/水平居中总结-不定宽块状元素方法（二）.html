@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>不定宽块状元素水平居中</title>
+    <style>
+        /*改变块级元素的 display 为 inline 类型，然后使用 text-align:center 来实现居中效果。*/
+        .container{text-align:center;}
+        .container ul{list-style:none;margin:0;padding:0;display:inline;}
+        .container li{margin-right:8px;display:inline;}
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <ul>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+    </ul>
+</div>
+</body>
+</html>
