@@ -1,0 +1,30 @@
+html中文读写显示：
+		在head标签内添加“<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />”，切记需要在title之前，不然标题有可能是乱码。
+	将字符声明为UTF-8类型，并且将文本编辑器打开文本的编码类型设置为UTF-8无BOM格式编码。
+
+PHP代码中文读写显示：
+		在代码开始加入一行“header("Content-Type: text/html;charset=utf-8");”，将字符声明为UTF-8类型，
+	并且将文本编辑器打开文本的编码类型设置为UTF-8无BOM格式编码。
+		PHP以附件形式保存文件，文件名必须是GB2312编码，否则，如果文件名中有中文的话，将是显示乱码： 
+	如果你的PHP本身是UTF-8编码格式的文件， 需要将文件名变量由UTF-8转成GB2312：iconv("UTF-8", "GB2312", "$filename")。
+		一般文章标题很长的时候，会显示一部分标题，会对文章标题进行截断， 由于一个UTF-8编码格式的中文字符会占用3个字符宽度， 
+	截取标题的时候，有时会只截取到一个中文字符的1个字符或2字符宽度， 没截取完整，将出现乱码或“？”问号的情况。具体解决方法在代码中体现。
+
+数据库MYSQL中文读写显示：
+		创建数据库的时候，请将“整理”设置为：“utf8_general_ci” ，创建数据表的时候：如果是该字段是存放中文的话，
+	则需要将“整理”设置为：“utf8_general_ci”，如果该字段是存放英文或数字的话，默认就可以了。 
+	读写数据库时，在连接数据库之后设置utf8格式即可。
+
+数据导入中文读写显示：
+		先需要确定你导入数据的编码格式，使用mysqldump的时候需要加上--default-character-set=utf8。
+		设置系统变量，设置默认的字符集为utf8。
+		修改my.ini文件，将"default-character-set=gbk"修改为"character-set-server=utf8"。
+		
+内码转换（字符集）中文读写显示：
+		使用mb_convert_encoding( $str, $encoding1,$encoding2 ) 
+		$str，要转换编码的字符串
+		$encoding1，目标编码，如utf-8,gbk，大小写均可
+		$encoding2，原编码，如utf-8,gbk，大小写均可
+		
+		
+
